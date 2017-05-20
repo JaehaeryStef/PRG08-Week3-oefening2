@@ -1,11 +1,11 @@
-class Hungry implements Behaviour {
+class Filty implements Behaviour {
 
     jibby: Jibby;
    
     constructor(j: Jibby) {
 
         this.jibby = j;
-        this.jibby.div.style.backgroundImage = "url('images/hungry.png')";
+        this.jibby.div.style.backgroundImage = "url('images/dirty.png')";
        
 
         //Make the browser speak

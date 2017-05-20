@@ -28,7 +28,7 @@ class Jibby {
  
 
         // afbeelding voor idle - verplaatsen naar idle gedrag
-        this.div.style.backgroundImage = "url('images/idle.png')";
+        //this.div.style.backgroundImage = "url('images/idle.png')";
     }
 
     public update(): void {
@@ -46,19 +46,19 @@ class Jibby {
 
     private onPet(): void {
         console.log("you clicked on jibby!");
-        this.behaviour = new Happy(this);
+        this.behaviour = new Petting(this);
         // hier moet je de onPet functie van het gedrag aanroepen
     }
 
     private onWash(): void {
         console.log("washing jibby!");
-        this.behaviour = new Hygiene(this);
+        this.behaviour = new Washing(this);
         // hier moet je de onWash functie van het gedrag aanroepen
     }
 
     private onEat(): void {
         console.log("jibby is eating!");
-        this.behaviour = new Hungry(this);
+        this.behaviour = new Eating(this);
         // hier moet je de onEat functie van het gedrag aanroepen
     }
 
